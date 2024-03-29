@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="CommsConsole"]/comps</xpath>
+        <value>
+            <li Class="SPM.CompProperties_BroadcastPropaganda">
+		        <useLabel>Broadcast Propaganda</useLabel>
+                <minSocialLevel>5</minSocialLevel>
+                <useDuration>2500</useDuration>
+            </li>
+        </value>
+    </Operation>
+</Patch>

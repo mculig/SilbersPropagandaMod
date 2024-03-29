@@ -1,0 +1,5 @@
+Source/LibSPM/bin
+Source/LibSPM/obj
+Assemblies/*.dll
+Assemblies/*.pdb
+.vscode/** */

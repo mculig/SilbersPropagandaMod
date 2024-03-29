@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{4FD4A3F6-C6B3-4826-B2C8-4E99588C880A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSPM", "Source\LibSPM\LibSPM.csproj", "{4931521E-6E25-4984-AC6C-CCE7004A727C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4931521E-6E25-4984-AC6C-CCE7004A727C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4931521E-6E25-4984-AC6C-CCE7004A727C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4931521E-6E25-4984-AC6C-CCE7004A727C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4931521E-6E25-4984-AC6C-CCE7004A727C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4931521E-6E25-4984-AC6C-CCE7004A727C} = {4FD4A3F6-C6B3-4826-B2C8-4E99588C880A}
+	EndGlobalSection
+EndGlobal

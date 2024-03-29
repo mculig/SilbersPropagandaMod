@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingDef Name="RadioTowerBase" Abstract="True">
+        <category>Building</category>
+        <thingClass>Building</thingClass>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshOnly</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <designationCategory>Misc</designationCategory>
+        <building>
+            <allowAutoroof>false</allowAutoroof>
+            <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <constructEffect>ConstructMetal</constructEffect>
+        <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="RadioTowerBase">
+        <defName>RadioTowerBasic</defName>
+        <label>Radio Tower</label>
+        <description>A tall radio tower used to broadcast at high fidelity across a large area</description>
+        <graphicData>
+            <texPath>SilbersPropagandaMod/SPM_RadioTower</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,6)</drawSize>
+            <drawOffset>(0,0,2)</drawOffset>
+            <!-- Shadow data? Damage data? -->
+        </graphicData>
+        <costList>
+            <Steel>600</Steel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>3000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+        </comps>
+        <statBases>
+            <WorkToBuild>10000</WorkToBuild>
+            <MaxHitPoints>800</MaxHitPoints>
+            <Beauty>-10</Beauty>
+        </statBases>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </ThingDef>
+</Defs>

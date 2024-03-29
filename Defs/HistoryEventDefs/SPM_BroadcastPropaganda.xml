@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <HistoryEventDef>
+    <defName>SPM_BroadcastPropagandaHistoryEvent</defName>
+    <label>broadcast propaganda</label>
+  </HistoryEventDef>
+</Defs>

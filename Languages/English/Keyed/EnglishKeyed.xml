@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <!-- Flaot menu items -->
+    <SPM_MissingRadioTower>Requires radio tower building</SPM_MissingRadioTower>
+    <SPM_BroadcastOnCooldown>On cooldown: {COOLDOWNTIME}</SPM_BroadcastOnCooldown>
+    <!-- Pawn Joins -->
+    <SPM_PawnJoinsTitle>{PAWN_nameDef} joins</SPM_PawnJoinsTitle>
+    <SPM_PawnJoinsText>{PAWN_nameDef} has heard your broadcast over the radio. {PAWN_nameDef} liked what {PAWN_pronoun} heard so much, {PAWN_pronoun} decided to join you!</SPM_PawnJoinsText>
+    <!-- Raid triggered -->
+    <SPM_PropagandaTriggeredRaidTitle>{FACTION} angered</SPM_PropagandaTriggeredRaidTitle>
+    <SPM_PropagandaTriggeredRaidText>Your recent broadcast has angered {FACTION} so greatly, that they have decided to retaliate in the form of a raid. They will take {DAYS} to prepare and arrive at your colony.</SPM_PropagandaTriggeredRaidText>
+
+</LanguageData>

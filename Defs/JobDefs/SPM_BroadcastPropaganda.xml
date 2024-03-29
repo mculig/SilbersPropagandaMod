@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <JobDef>
+        <defName>SPM_BroadcastPropaganda</defName>
+        <driverClass>SPM.JobDriver_BroadcastPropaganda</driverClass>
+        <reportString>Broadcasting propaganda</reportString>
+        <suspendable>true</suspendable>
+    </JobDef>
+</Defs>
