@@ -2,7 +2,9 @@
 <LanguageData>
     <!-- Flaot menu items -->
     <SPM_MissingRadioTower>Requires radio tower building</SPM_MissingRadioTower>
+    <SPM_NoTowersPowered>Radio tower powered off</SPM_NoTowersPowered>
     <SPM_BroadcastOnCooldown>On cooldown: {COOLDOWNTIME}</SPM_BroadcastOnCooldown>
+    
     <!-- Pawn Joins -->
     <SPM_PawnJoinsTitle>{PAWN_nameDef} joins</SPM_PawnJoinsTitle>
     <SPM_PawnJoinsText>{PAWN_nameDef} has heard your broadcast over the radio. {PAWN_nameDef} liked what {PAWN_pronoun} heard so much, {PAWN_pronoun} decided to join you!</SPM_PawnJoinsText>

@@ -67,9 +67,18 @@ namespace SPM{
         }
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn){
+
+            List<Thing> radioTowers = this.parent.Map.listerThings.ThingsMatching(ThingRequest.ForDef(ThingDef.Named("RadioTowerBasic")));
+            int countTowers = radioTowers.Count;
+            int countHavePower = radioTowers.Select(t => t.TryGetComp<CompPowerTrader>()).Where(cpt => cpt != null && cpt.PowerOn == true).Count();
+
             //Check if we have radio tower
-            if(this.parent.Map.listerThings.ThingsMatching(ThingRequest.ForDef(ThingDef.Named("RadioTowerBasic"))).Count <= 0){
+            if(countTowers <= 0){
                 yield return new FloatMenuOption(this.FloatMenuOptionLabel + " (" + "SPM_MissingRadioTower".Translate() + ")", null, MenuOptionPriority.Default, null, null, 0f, null, null);
+            }
+            //Check if ANY radio tower is powered
+            else if(countHavePower <= 0){
+                yield return new FloatMenuOption(this.FloatMenuOptionLabel + " (" + "SPM_NoTowersPowered".Translate() + ")", null, MenuOptionPriority.Default, null, null, 0f, null, null);
             }
             //Check if on cooldown
             else if(tickLastUsed > 0 && tickLastUsed + ticksCooldown > Find.TickManager.TicksGame){
