@@ -6,7 +6,7 @@
     <author>Silber</author>
     <modVersion>0.2b</modVersion>
     <supportedVersions>
-        <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
 
     <description>Adds a Radio Tower structure which enables the use of the Comms Console to broadcast propaganda, influencing relationships with nearby factions and potentially causing pawns to join or triggering raids</description>
